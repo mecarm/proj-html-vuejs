@@ -14,6 +14,18 @@
         </div>
       </div>
     </div>
+    <div class="nav-bar">
+      <div>
+        <img src="../assets/images/cropped-Group-39-2x.png" alt="">
+      </div>
+      <div>
+        Ciclo for per stampare array con componenti 
+      </div>
+      <div>
+        <button>PURCHASE</button>
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+      </div>
+    </div>
   </header>
 </template>
 
@@ -27,6 +39,7 @@ export default {
 <style scoped lang="scss">
 @import '../style/style.scss';
 
+/* TOP BAR GRIGIA */
 .top-bar {
   background-color: #3D3D3D;
   padding: 5px 0;
@@ -42,5 +55,24 @@ export default {
         margin-right: 10px;
       }
     }
+}
+/* NAV BAR */
+.nav-bar{
+  @include flex($justify: Between_Center);
+  @include center;
+  padding: 20px;
+
+  img{
+    width: 90%;
+  }
+
+  button{
+    margin-right: 20px;
+    @include button
+  }
+
+  .fa-magnifying-glass{
+    color: #00D9A6;
+  }
 }
 </style>
