@@ -18,8 +18,10 @@
       <div>
         <img src="../assets/images/cropped-Group-39-2x.png" alt="">
       </div>
-      <div>
-        Ciclo for per stampare array con componenti 
+      <div class="menu">
+        <span v-for="(elem, index) in vocimenu" :key="index">
+          <a :href="elem.href">{{elem.voce.toUpperCase()}}</a>
+        </span>
       </div>
       <div>
         <button>PURCHASE</button>
@@ -32,7 +34,9 @@
 <script>
 export default {
   name: 'HeaderComp',
-  
+  props:{
+    vocimenu: Array
+  }
 }
 </script>
 
@@ -63,12 +67,32 @@ export default {
   padding: 20px;
 
   img{
-    width: 90%;
+    width: 100%;
+  }
+
+  .menu{
+    span{
+      padding-right: 10px;
+      font-size: 0.8rem;
+
+      &:first-child{
+          font-weight: bold;
+        }
+
+      a{
+        text-decoration: none;
+        color: #3D3D3D;
+      }
+    }
   }
 
   button{
-    margin-right: 20px;
-    @include button
+    margin-right: 30px;
+    @include button;
+
+    &:hover{
+      @include button_hover;
+    }
   }
 
   .fa-magnifying-glass{

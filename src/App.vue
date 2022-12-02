@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComp/>
+    <HeaderComp :vocimenu="headerMenu"/>
   </div>
 </template>
 
@@ -11,6 +11,36 @@ export default {
   name: 'App',
   components: {
     HeaderComp
+  },
+  data(){
+    return{
+      headerMenu: [
+        {
+          voce: 'home',
+          href: '/home'
+        },
+        {
+          voce: 'about',
+          href: '/about'
+        },
+        {
+          voce: 'service',
+          href: '/service'
+        },
+        {
+          voce: 'showcase',
+          href: '/showcase'
+        },
+        {
+          voce: 'blog',
+          href: '/blog'
+        },
+        {
+          voce: 'contact',
+          href: '/contact'
+        },
+      ]
+    }
   }
 }
 </script>
