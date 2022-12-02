@@ -3,7 +3,7 @@
 
 
 /* Mixin */
-@mixin flex($justify: Between) {
+@mixin flex($justify) {
     display: flex;
 
     @if $justify == 'Both_Center'{
