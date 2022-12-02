@@ -1,0 +1,25 @@
+/* Variabili colori */
+
+
+
+/* Mixin */
+@mixin flex($justify: Between) {
+    display: flex;
+
+    @if $justify == 'Both_Center'{
+        justify-content: center;
+        align-items: center;
+    }
+    @else if $justify == 'Between_Center'{
+        justify-content: space-between;
+        align-items: center;
+    }
+    @else if $justify == 'Between'{
+        justify-content: space-between;
+    }
+}
+
+@mixin center{
+    width: 80%;
+    margin: auto;
+}
