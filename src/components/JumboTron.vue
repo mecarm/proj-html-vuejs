@@ -7,6 +7,10 @@
             <div></div>
             <div></div>
         </div>
+        <p>
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in bookmarksgrove.
+        </p>
+        <button>READ MORE</button>
     </div>
     <div class="image-jumbotron-1">
         <div class="image-jumbotron-2">
@@ -35,6 +39,7 @@ section {
 .jumbo-description {
     margin-left: 10%;
     padding-top: 130px;
+    width: 60%;
 
     h1 {
         font-family: 'Varela Round', sans-serif;
@@ -51,6 +56,15 @@ section {
         letter-spacing: 8px;
         color: $primary-brand-color;
         padding-left: 5px;
+    }
+
+    button{
+        margin: 60px 0;
+        @include button_black;
+
+        &:hover{
+            @include button
+        }
     }
 
     .line {

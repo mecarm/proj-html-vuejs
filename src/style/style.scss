@@ -36,7 +36,7 @@ $primary-brand-gradient: linear-gradient(90deg, rgb(0, 255, 0), #00D9A6);
     cursor: pointer;
 }
 
-@mixin button_hover{
+@mixin button_black{
     border: none;
     background: linear-gradient(90deg, rgb(66, 65, 65), rgb(0, 0, 0));
     padding: 15px 30px;

@@ -91,7 +91,7 @@ export default {
     @include button;
 
     &:hover{
-      @include button_hover;
+      @include button_black;
     }
   }
 
