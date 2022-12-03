@@ -11,6 +11,12 @@
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in bookmarksgrove.
         </p>
         <button>READ MORE</button>
+        <div class="social">
+            <span><a href="https://www.facebook.com/">FACEBOOK</a>-</span>
+            <span><a href="https://www.instagram.com">INSTAGRAM</a>-</span>
+            <span><a href="https://www.youtube.com">YOUTUBE</a>-</span>
+            <span><a href="https://www.twitter.com/">TWITTER</a></span>
+        </div>
     </div>
     <div class="image-jumbotron-1">
         <div class="image-jumbotron-2">
@@ -38,7 +44,7 @@ section {
 
 .jumbo-description {
     margin-left: 10%;
-    padding-top: 130px;
+    padding-top: 80px;
     width: 60%;
 
     h1 {
@@ -86,6 +92,17 @@ section {
                 width: 50px;
                 height: 5px;
             }
+        }
+    }
+    .social{
+        
+
+        a{
+            margin: 0 5px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 0.8rem;
         }
     }
 }
