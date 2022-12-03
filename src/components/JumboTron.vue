@@ -83,19 +83,16 @@ section {
             border-radius: 10px;
 
             &:first-child {
-                width: 10px;
-                height: 5px;
+                @include line($line: 'small')
             }
 
             &:last-child {
-                margin-left: 10px;
-                width: 50px;
-                height: 5px;
+                @include line($line: 'big')
             }
         }
     }
     .social{
-        
+
 
         a{
             margin: 0 5px;
