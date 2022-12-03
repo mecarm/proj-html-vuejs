@@ -78,9 +78,6 @@ section {
         margin: 40px 0;
 
         div {
-            display: inline-block;
-            background: $primary-brand-gradient;
-            border-radius: 10px;
 
             &:first-child {
                 @include line($line: 'small')
