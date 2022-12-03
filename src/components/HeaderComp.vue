@@ -96,7 +96,7 @@ export default {
   }
 
   .fa-magnifying-glass{
-    color: #00D9A6;
+    color: $primary-brand-color;
   }
 }
 </style>

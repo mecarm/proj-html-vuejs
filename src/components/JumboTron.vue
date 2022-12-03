@@ -3,6 +3,10 @@
     <div class="jumbo-description">
         <h5>17 YEARS OF EXPIRIENCE</h5>
         <h1>Focus on Your <span>Business</span> </h1>
+        <div class="line">
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <div class="image-jumbotron-1">
         <div class="image-jumbotron-2">
@@ -22,7 +26,7 @@ export default {
 @import '../style/style.scss';
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 
-section{
+section {
     @include flex($justify: 'flex');
     background-color: #F5F5F5;
 
@@ -38,15 +42,37 @@ section{
         color: black;
         padding-top: 20px;
 
-        span{
-            color: #00D9A6;
+        span {
+            color: $primary-brand-color;
         }
     }
 
     h5 {
         letter-spacing: 8px;
-        color: #00D9A6;
+        color: $primary-brand-color;
         padding-left: 5px;
+    }
+
+    .line {
+        @include flex('flex');
+        margin: 40px 0;
+
+        div {
+            display: inline-block;
+            background: $primary-brand-gradient;
+            border-radius: 10px;
+
+            &:first-child {
+                width: 10px;
+                height: 5px;
+            }
+
+            &:last-child {
+                margin-left: 10px;
+                width: 50px;
+                height: 5px;
+            }
+        }
     }
 }
 
