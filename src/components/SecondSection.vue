@@ -38,8 +38,8 @@ section{
         flex-basis: 40%;
 
         .img-1{
-            width: 90%;
-            height: 500px;
+            width: 100%;
+            height: 600px;
             background-image: url('../assets/images/busy-architect-PYVKWM4-1024x872.jpg'), $primary-image-gradient;
             background-size: cover;
             background-repeat: no-repeat;
@@ -49,11 +49,12 @@ section{
 
             .img-absolute{
                 width: 100%;
-                height: 470px;
+                height: 550px;
                 position: absolute;
                 background-image: url('../assets/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg');
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-position: center;
                 border-radius: 10px;
                 bottom: -30px;
                 right: -30%;
