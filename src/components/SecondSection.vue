@@ -1,9 +1,8 @@
 <template>
     <section>
         <div class="img-container">
-            <div class="img-1"></div>
-            <div class="img-absolute">
-                <img src="" alt="">
+            <div class="img-1">
+                <div class="img-absolute"></div>
             </div>
         </div>
         <div class="text-container">
@@ -12,7 +11,10 @@
                 <div></div>
                 <div></div>
             </div>
-            <button>VIEW ALL</button>
+            <p>
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in bookmarksgrove.
+            </p>
+            <button>READ MORE</button>
         </div>
     </section>
 </template>
@@ -33,20 +35,36 @@ section{
     @include flex($justify: Between_Center);
 
     .img-container{
-        flex-basis: 70%;
+        flex-basis: 40%;
 
         .img-1{
-            width: 60%;
+            width: 90%;
             height: 500px;
             background-image: url('../assets/images/busy-architect-PYVKWM4-1024x872.jpg'), $primary-image-gradient;
             background-size: cover;
             background-repeat: no-repeat;
             border-radius: 0px 20px 20px 0;
-            background-blend-mode: overlay;
+            background-blend-mode: soft-light;
+            position: relative;
+
+            .img-absolute{
+                width: 100%;
+                height: 470px;
+                position: absolute;
+                background-image: url('../assets/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                bottom: -30px;
+                right: -30%;
+                box-shadow: 15px 15px 20px rgba(155, 154, 154, 0.4);
+
+            }
         }
     }
     .text-container {
-        flex-basis: 30%;
+        flex-basis: 40%;
+        padding-right: 10%;
 
         h1{
             font-family: 'Varela Round', sans-serif;
@@ -74,6 +92,7 @@ section{
         }
     
         button {
+            margin: 40px 0;
             @include button;
     
             &:hover {
