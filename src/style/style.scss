@@ -60,3 +60,9 @@ $primary-brand-gradient: linear-gradient(90deg, rgb(0, 255, 0), #00D9A6);
         height: 5px;
     }
 }
+
+@mixin vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: bold;
+}

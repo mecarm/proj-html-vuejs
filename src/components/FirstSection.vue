@@ -31,6 +31,9 @@
                     <p>Far far away, behind the word mountains, far from the countries Vokalia Separated</p>
                 </div>
             </div>
+            <div class="vertical-text">
+                17 years of expirience helping people for best solutions
+            </div>
         </div>
     </section>
 </template>
@@ -87,7 +90,9 @@ section{
             }
         }
     }
-
+        .vertical-text {
+            @include vertical-text
+        }
 
 h1{
     font-family: 'Varela Round', sans-serif;
