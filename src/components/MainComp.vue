@@ -20,7 +20,8 @@ export default {
         FirstSection,
         SecondSection,
         ThirdSection
-    }
+    },
+   
 }
 </script>
 

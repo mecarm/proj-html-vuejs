@@ -7,7 +7,7 @@
                     <div></div>
                 </div>
                 <h1>
-                    Our recent <span>web design</span> & some examples of past <span>projects</span>
+                    Our recent <span>web design</span> & <br> some examples of <br> past <span>projects</span>
                 </h1>
                 <div class="line">
                     <div></div>
@@ -16,12 +16,43 @@
             </div>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in bookmarksgrove. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
         </div>
+        <div class="main-container">
+            <div class="img-container">
+                <div class="card">
+                    <img src="../assets/images/ina-soulis-227104-unsplash-1024x1024.jpg" alt="rose nel cesto">
+                </div>
+                <div class="card">
+                    <img src="../assets/images/sunisa-misa-531163-unsplash-1024x1024.jpg" alt="ruota panoramica">
+                </div>
+                <div class="card">
+                    <img src="../assets/images/355H-1024x1024.jpg" alt="scarpe gialle">
+                </div>
+                <div class="card">
+                    <img src="../assets/images/photo-1448932252197-d19750584e56-1024x1024.jpg" alt="uomo che digita al pc">
+                </div>
+                <div class="card">
+                    <img src="../assets/images/business-competition-PB366D8-1024x1024.jpg" alt="barchette di carta colorate">
+                </div>
+                <div class="card">
+                    <img src="../assets/images/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" alt="divano con sfondo verde">
+                </div>
+                <div class="card">
+                    <img src="../assets/images/aa9a4539-PQGJ7HU-1024x1024.jpg" alt="mongolfiere">
+                </div>
+                <div class="card">
+                    <img src="../assets/images/cody-davis-253928-unsplash-1024x1024.jpg" alt="arancia con buccia blu">
+                </div>
+            </div>
+            <div class="vertical-text">
+                17 years of expirience helping people for best solutions
+            </div>
+        </div>
     </section>
 </template>
 
 <script>
 export default {
-    name: 'ThirdSection'
+    name: 'ThirdSection',
 }
 </script>
 
@@ -47,7 +78,7 @@ export default {
     }
 
     p{
-        flex-basis: 57%;
+        flex-basis: 58%;
         font-size: 0.9rem
     }
     .line {
@@ -63,6 +94,28 @@ export default {
             &:last-child {
                 @include line($line: 'big')
             }
+        }
+    }
+}
+.main-container{
+    @include flex($justify: Both_Center);
+    padding: 30px 0;
+    .vertical-text {
+            @include vertical-text;
+            margin-right: 5%;
+        }
+}
+.img-container{
+    @include flex($justify: flex);
+    @include center;
+    flex-wrap: wrap;
+    .card{
+        width: calc(100% / 4);
+        padding: 0px 1px;
+
+        img{
+            width: 100%;
+            border-radius: 10px;
         }
     }
 }
