@@ -57,6 +57,21 @@ section{
         span{
         color: $primary-brand-color;
         }
+        .line {
+        @include flex('flex');
+        margin: 40px 0;
+
+        div {
+
+            &:first-child {
+                @include line($line: 'small')
+                }
+
+            &:last-child {
+                @include line($line: 'big')
+                }
+            }
+        }
     
         button {
             @include button;
