@@ -47,6 +47,9 @@
                 17 years of expirience helping people for best solutions
             </div>
         </div>
+        <div class="button-center">
+            <button>READ MORE</button>
+        </div>
     </section>
 </template>
 
@@ -101,22 +104,35 @@ export default {
     @include flex($justify: Both_Center);
     padding: 30px 0;
     .vertical-text {
-            @include vertical-text;
-            margin-right: 5%;
-        }
+        @include vertical-text;
+    }
 }
 .img-container{
     @include flex($justify: flex);
     @include center;
+
     flex-wrap: wrap;
     .card{
         width: calc(100% / 4);
-        padding: 0px 1px;
+        padding: 0px 2px;
 
         img{
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
         }
     }
 }
+.button-center{
+    @include flex($justify: Both_Center);
+
+    button {
+    margin: 40px 0 150px 0;
+    @include button;
+
+    &:hover {
+        @include button_black;
+    }
+}
+}
+
 </style>
