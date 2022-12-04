@@ -54,7 +54,7 @@ section{
 .container{
     @include center;
     @include flex($justify: Between_Center);
-    padding: 150px 0;
+    padding: $vertical-center-pd;
 }
     .text-container {
         padding-right: 40px;

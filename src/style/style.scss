@@ -1,7 +1,10 @@
 /* Variabili colori */
 $primary-brand-color: #00D9A6;
 $primary-brand-gradient: linear-gradient(90deg, rgb(0, 255, 0), #00D9A6);
+$primary-image-gradient: linear-gradient(to top right,#39d61d, #00D9A6);
 
+/* Variabili */
+$vertical-center-pd: 150px 0;
 
 /* Mixin */
 @mixin flex($justify) {
@@ -24,6 +27,7 @@ $primary-brand-gradient: linear-gradient(90deg, rgb(0, 255, 0), #00D9A6);
     width: 80%;
     margin: auto;
 }
+
 
 @mixin button{
     border: none;
