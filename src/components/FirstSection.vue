@@ -1,12 +1,13 @@
 <template>
     <section>
         <div class="container">
-            <div>
+            <div class="text-container">
                 <h1>We Are Here To Make Your <span>Website</span> Look More <span>Elegant</span> And Stylish!</h1>
                 <div class="line">
                     <div></div>
                     <div></div>
                 </div>
+                <button>VIEW ALL</button>
             </div>
             <div class="card-container">
                 <div class="card">
@@ -15,18 +16,18 @@
                     <p>Far far away, behind the word mountains, far from the countries Vokalia Separated</p>
                 </div>
                 <div class="card">
-                    <font-awesome-icon icon="fa-solid fa-gauge-high" class="icon" />
-                    <h2>Speed Optimization</h2>
+                    <font-awesome-icon icon="fa-solid fa-cloud" class="icon"/>
+                    <h2>Cloud Solutions</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia Separated</p>
                 </div>
                 <div class="card">
-                    <font-awesome-icon icon="fa-solid fa-gauge-high" class="icon" />
-                    <h2>Speed Optimization</h2>
+                    <font-awesome-icon icon="fa-solid fa-tablet-screen-button" class="icon"/>
+                    <h2>Website Design</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia Separated</p>
                 </div>
                 <div class="card">
-                    <font-awesome-icon icon="fa-solid fa-gauge-high" class="icon" />
-                    <h2>Speed Optimization</h2>
+                    <font-awesome-icon icon="fa-solid fa-stopwatch" class="icon"/>
+                    <h2>Online Marketing</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia Separated</p>
                 </div>
             </div>
@@ -52,6 +53,17 @@ section{
     @include flex($justify: Between_Center);
     padding: 150px 0;
 }
+    .text-container {
+        padding-right: 40px;
+    
+        button {
+            @include button;
+    
+            &:hover {
+                @include button_black;
+            }
+        }
+    }
     .card-container{
         @include flex($justify: Between_Center);
         flex-wrap: wrap;
@@ -71,6 +83,7 @@ section{
 
             h2{
                 margin: 20px 0;
+                font-weight: 500;
             }
         }
     }
