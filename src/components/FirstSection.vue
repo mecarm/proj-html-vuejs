@@ -97,6 +97,7 @@ section{
 h1{
     font-family: 'Varela Round', sans-serif;
     font-size: 2.5rem;
+    color: black;
 
     span{
         color: $primary-brand-color;
