@@ -5,6 +5,7 @@
     <SecondSection/>
     <ThirdSection/>
     <FourthSection/>
+    <SubscriptionSection/>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import FirstSection from './FirstSection.vue'
 import SecondSection from './SecondSection.vue'
 import ThirdSection from './ThirdSection.vue'
 import FourthSection from './FourthSection.vue'
+import SubscriptionSection from './SubscriptionSection.vue'
 
 export default {
     name: 'MainComp',
@@ -22,7 +24,8 @@ export default {
         FirstSection,
         SecondSection,
         ThirdSection,
-        FourthSection
+        FourthSection,
+        SubscriptionSection
     },
    
 }
