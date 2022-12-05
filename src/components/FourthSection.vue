@@ -2,6 +2,21 @@
     <section>
         <div class="img-container">
             <div class="img-1">
+                <div class="text-green-box">
+                        <h1>280</h1>
+                        <span>PROJECTS</span>
+                        <div class="flex-container">
+                            <div>
+                                <h2>+3,500</h2>
+                                <span>USERS'COMMENTS</span>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div>
+                                <h2>100%</h2>
+                                <span>HAPPY CLIENTS</span>
+                            </div>
+                        </div>
+                    </div>
                 <div class="img-absolute">
                     <div class="text-container">
                         <h1>We <span>Love</span> What <br>We Do</h1>
@@ -49,16 +64,51 @@ section{
             background-image: url('../assets/images/person-with-long-curly-hair-PZ99QM2-2x.jpg'), $secondary-image-gradient;
             background-size: cover;
             background-repeat: no-repeat;
-            border-radius: 20px;
+            border-radius: 5px;
             background-blend-mode: soft-light;
             position: relative;
+            .text-green-box {
+                    width: 100%;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 50%;
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    text-align: center;
+                    color: white;
 
+                h1{
+                    font-size: 6rem;
+                    font-weight: 300;
+                }
+                span{
+                    font-family: 'Varela Round', sans-serif;
+                }
+                .flex-container{
+                    margin-top: 20px;
+                    @include flex($justify: Both_Center);
+                    .vertical-line{
+                        width: 1px;
+                        height: 50px;
+                        background: rgb(235, 232, 232);
+                    }
+                    div{
+                        margin: 0 10px;
+
+                        h2{
+                            font-size: 2rem;
+                            font-weight: 500;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
             .img-absolute {
                     width: 100%;
                     height: 500px;
                     position: absolute;
                     background: white;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     bottom: -50px;
                     right: -80%;
                     box-shadow: 15px 15px 20px rgba(155, 154, 154, 0.4);
