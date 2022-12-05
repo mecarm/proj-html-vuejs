@@ -10,14 +10,14 @@ import App from './App.vue'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   /* import specific icons */
-  import { faUserSecret as faUserSecretSolid, faPhone as faPhoneSolid, faMagnifyingGlass, faGaugeHigh, faCloud, faTabletScreenButton, faStopwatch } from '@fortawesome/free-solid-svg-icons'
+  import { faUserSecret as faUserSecretSolid, faPhone as faPhoneSolid, faMagnifyingGlass, faGaugeHigh, faCloud, faTabletScreenButton, faStopwatch, faCheck } from '@fortawesome/free-solid-svg-icons'
   /*Import icone regular */
   // import { faFaceSmile } from '@fortawesome/free-regular-svg-icons'
 
   /* IMPORT BRAND ICON */
    import { faFacebookF, faTwitter, faPinterestP } from '@fortawesome/free-brands-svg-icons'
   /* add icons to the library */
-  library.add(faUserSecretSolid,faPhoneSolid, faFacebookF, faTwitter, faPinterestP, faMagnifyingGlass, faGaugeHigh, faCloud, faTabletScreenButton, faStopwatch)
+  library.add(faUserSecretSolid,faPhoneSolid, faFacebookF, faTwitter, faPinterestP, faMagnifyingGlass, faGaugeHigh, faCloud, faTabletScreenButton, faStopwatch, faCheck)
 
   /* add font awesome icon component */
   Vue.component('font-awesome-icon', FontAwesomeIcon)
