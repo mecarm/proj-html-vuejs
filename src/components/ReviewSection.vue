@@ -38,7 +38,7 @@ section{
 .container{
     padding: 150px 0;
     background: rgba(39, 39, 39, 0.878);
-    color: whitesmoke;
+    color: $lightWhite-text;
     .quotation-marks{
         font-size: 3rem;
         color: $primary-brand-color;
