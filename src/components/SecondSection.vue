@@ -31,7 +31,7 @@ export default {
 
 section{
     padding: $vertical-center-pd;
-    background: #F5F5F5;
+    background: $bg-soft-grey;
     @include flex($justify: Between_Center);
 
     .img-container{

@@ -4,6 +4,7 @@
     <FirstSection/>
     <SecondSection/>
     <ThirdSection/>
+    <FourthSection/>
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import JumboTron from './JumboTron.vue'
 import FirstSection from './FirstSection.vue'
 import SecondSection from './SecondSection.vue'
 import ThirdSection from './ThirdSection.vue'
+import FourthSection from './FourthSection.vue'
 
 export default {
     name: 'MainComp',
@@ -19,7 +21,8 @@ export default {
         JumboTron,
         FirstSection,
         SecondSection,
-        ThirdSection
+        ThirdSection,
+        FourthSection
     },
    
 }
