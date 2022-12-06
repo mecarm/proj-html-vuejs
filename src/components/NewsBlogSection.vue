@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="card-cta card-start">
-        <span>What Are You Waiting For</span>
+        <span>What Are You Waiting for?</span>
         <h1>Let's Talk About Work</h1>
         <div class="button-center-2">
             <button>START NOW</button>
@@ -170,6 +170,7 @@ section{
   position: absolute;
   bottom: -10%;
   left: 10%;
+  font-family: 'Varela Round', sans-serif;
   .card-cta{
     text-align: center;
     width: calc(100% / 2);
@@ -180,6 +181,7 @@ section{
     span{
       color: $lightGrey-text;
       font-weight: bold;
+      font-size: 0.8rem;
     }
     h1{
       padding: 10px 0;
