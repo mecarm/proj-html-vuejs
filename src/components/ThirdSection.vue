@@ -20,27 +20,59 @@
             <div class="img-container">
                 <div class="card">
                     <img src="../assets/images/ina-soulis-227104-unsplash-1024x1024.jpg" alt="rose nel cesto">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/sunisa-misa-531163-unsplash-1024x1024.jpg" alt="ruota panoramica">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/355H-1024x1024.jpg" alt="scarpe gialle">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/photo-1448932252197-d19750584e56-1024x1024.jpg" alt="uomo che digita al pc">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/business-competition-PB366D8-1024x1024.jpg" alt="barchette di carta colorate">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" alt="divano con sfondo verde">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/aa9a4539-PQGJ7HU-1024x1024.jpg" alt="mongolfiere">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="../assets/images/cody-davis-253928-unsplash-1024x1024.jpg" alt="arancia con buccia blu">
+                    <div class="d-none">
+                        <h3>A Famous Ferris Wheel</h3>
+                        <h5>MARKETING</h5>
+                    </div>
                 </div>
             </div>
             <div class="vertical-text">
@@ -116,11 +148,40 @@ export default {
     flex-wrap: wrap;
     .card{
         width: calc(100% / 4);
-        padding: 0px 2px;
+        padding: 2px;
+        position: relative;
+
+        &:hover{
+            background: $primary-image-gradient;
+            border-radius: 5px;
+
+            img{
+                opacity: 0.2;
+            }
+
+            .d-none{
+                display: block;
+            }
+        }
+
+        .d-none{
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            font-family: 'Varela Round', sans-serif;
+            color: white;
+            display: none;
+
+            h3{
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+            }
+        }
 
         img{
             width: 100%;
             border-radius: 5px;
+            height: 100%;
         }
     }
 }

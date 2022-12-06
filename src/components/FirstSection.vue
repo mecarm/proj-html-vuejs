@@ -73,11 +73,21 @@ section{
         .card{
             padding: 40px;
             margin: 20px;
-            border: 1px solid white;
             border-radius: 15px;
             width: calc((100% / 2) - 40px);
             background: white;
             box-shadow: 0px 15px 20px rgba(155, 154, 154, 0.4);
+
+            &:hover{
+                background: $primary-brand-gradient-tobottom;
+                color: white;
+                .icon{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
 
             .icon{
                 font-size: 3.5rem;
