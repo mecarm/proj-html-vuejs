@@ -61,7 +61,6 @@ export default {
 @import '../style/style.scss';
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 section{
-  background: $bg-soft-grey;
   padding: $vertical-center-pd;
   position: relative
 }
@@ -154,6 +153,7 @@ section{
   @include center;
   @include flex($justify: Both_Center);
   position: absolute;
+  bottom: -10%;
   left: 10%;
   .card-cta{
     text-align: center;

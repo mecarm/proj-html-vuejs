@@ -8,6 +8,7 @@
     <SubscriptionSection/>
     <ReviewSection/>
     <NewsBlogSection/>
+    <CompanySection/>
   </main>
 </template>
 
@@ -20,6 +21,7 @@ import FourthSection from './FourthSection.vue'
 import SubscriptionSection from './SubscriptionSection.vue'
 import ReviewSection from './ReviewSection.vue'
 import NewsBlogSection from './NewsBlogSection.vue'
+import CompanySection from './CompanySection.vue'
 
 export default {
     name: 'MainComp',
@@ -31,7 +33,8 @@ export default {
         FourthSection,
         SubscriptionSection,
         ReviewSection,
-        NewsBlogSection
+        NewsBlogSection,
+        CompanySection
     },
    
 }
