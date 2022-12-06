@@ -88,6 +88,9 @@ section{
                 margin: 20px 0;
                 font-weight: 500;
             }
+            p{
+                color: $grey-text;
+            }
         }
     }
         .vertical-text {

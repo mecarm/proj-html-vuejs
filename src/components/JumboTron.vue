@@ -57,6 +57,9 @@ section {
             color: $primary-brand-color;
         }
     }
+    p{
+        color: $grey-text;
+    }
 
     h5 {
         letter-spacing: 8px;

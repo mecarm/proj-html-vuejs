@@ -38,6 +38,7 @@
                 <div></div>
                 <div></div>
             </div>
+            <img class="img" src="../assets/images/map.png" alt="location on map">
         </div>
     </div>
   </footer>
@@ -60,6 +61,9 @@ export default {
     color: $grey-text;
     .footer-div{
         flex-basis: 24%;
+        .img{
+            width: 100%;
+        }
 
         li{
             list-style-type: none;
@@ -68,6 +72,10 @@ export default {
         }
         .spacing{
             padding-top: 25px;
+        }
+
+        p{
+            padding: 0 5px
         }
     }
     .line {

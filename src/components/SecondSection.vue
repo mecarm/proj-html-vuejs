@@ -74,7 +74,11 @@ section{
         }
 
         span{
-        color: $primary-brand-color;
+            color: $primary-brand-color;
+        }
+
+        p{
+            color: $grey-text;
         }
         .line {
         @include flex('flex');

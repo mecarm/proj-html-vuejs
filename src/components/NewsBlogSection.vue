@@ -7,6 +7,9 @@
           <div></div>
         </div>
         <div class="cards-container">
+          <div class="vertical-text">
+                17 years of expirience helping people for best solutions
+          </div>
           <div class="card card-1">
             <div class="plate">
               <span>May 24, 2018 .by Alex</span>
@@ -95,6 +98,11 @@ section{
 }
 .cards-container{
   @include flex($justify: Both_Center);
+  .vertical-text {
+        @include vertical-text;
+        margin-left: -50px;
+        margin-right: 20px;
+    }
   .card{
     width: calc(100% / 3);
     aspect-ratio: 16/12;
