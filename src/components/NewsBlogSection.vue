@@ -65,7 +65,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 section{
   padding: $vertical-center-pd;
-  position: relative
+  position: relative;
 }
 .container {
   @include center;
@@ -74,6 +74,7 @@ section{
   h1 {
     font-size: 2.4rem;
     font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
   }
 
   span {
@@ -134,7 +135,11 @@ section{
       position: absolute;
       bottom: -30px;
       box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+      font-family: 'Varela Round', sans-serif;
 
+      h3{
+        font-weight: 500;
+      }
     } 
   }
   .card-1{

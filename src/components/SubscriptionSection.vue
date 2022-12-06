@@ -97,8 +97,9 @@ section{
         flex-basis: 30%;
 
         h1 {
-            font-size: 2.4rem;
-            font-weight: 500;
+            font-size: 2.3rem;
+            font-family: 'Varela Round', sans-serif;
+
         }
         span {
             color: $primary-brand-color;
@@ -134,6 +135,8 @@ section{
     background: white;
     text-align: center;
     border-radius: 20px;
+    font-family: 'Varela Round', sans-serif;
+
     .vert-line{
         border-radius: 20px 20px 0 0 ;
         height: 10px;
@@ -160,7 +163,8 @@ section{
     .price{
         padding: 20px 0;
         h1{
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: 100;
             color: white;
             span{
                 font-size: 1rem;
@@ -173,7 +177,7 @@ section{
         li{
             list-style: none;
             color: $grey-text;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             line-height: 40px;
             .icon{
                 margin-right: 10px;

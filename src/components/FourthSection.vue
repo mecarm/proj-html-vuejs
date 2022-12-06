@@ -118,7 +118,7 @@ section{
             
                         h1 {
                             font-family: 'Varela Round', sans-serif;
-                            font-size: 2.5rem;
+                            font-size: 2.4rem;
                         }
             
                         span {

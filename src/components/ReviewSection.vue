@@ -34,6 +34,7 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    font-family: 'Varela Round', sans-serif;
 }
 .container{
     padding: 150px 0;
@@ -45,7 +46,7 @@ section{
     }
     p{
         padding: 50px 300px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-style: italic;
         line-height: 30px;
     }

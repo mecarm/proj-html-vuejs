@@ -41,6 +41,9 @@
             <img class="img" src="../assets/images/map.png" alt="location on map">
         </div>
     </div>
+    <div class="black-bottom-footer">
+
+    </div>
   </footer>
 </template>
 
@@ -63,6 +66,10 @@ export default {
         flex-basis: 24%;
         .img{
             width: 100%;
+        }
+
+        h3{
+            font-family: 'Varela Round', sans-serif;
         }
 
         li{

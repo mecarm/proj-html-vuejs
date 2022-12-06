@@ -73,6 +73,7 @@ export default {
         h1{
             font-size: 2.4rem;
             font-weight: 500;
+            font-family: 'Varela Round', sans-serif;
         }
 
         span{
