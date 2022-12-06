@@ -43,7 +43,7 @@
         <span>What Are You Waiting For</span>
         <h1>Let's Talk About Work</h1>
         <div class="button-center-2">
-            <button>VIEW ALL POST</button>
+            <button>START NOW</button>
         </div>
       </div>
 
@@ -120,11 +120,13 @@ section{
     .plate{
       text-align: start;
       width: 80%;
-      padding: 30px 0px 20px 10px;
+      padding: 30px 0px 10px 10px;
       background: white;
       border-radius: 10px ;
       position: absolute;
       bottom: -30px;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+
     } 
   }
   .card-1{
