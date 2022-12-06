@@ -41,8 +41,21 @@
             <img class="img" src="../assets/images/map.png" alt="location on map">
         </div>
     </div>
-    <div class="black-bottom-footer">
-
+    <div class="bottom-footer">
+        <div class="black-bottom-footer">
+            <div><font-awesome-icon icon="fa-solid fa-copyright" /> 2020 PHLOX BUSINESS THEME.</div>
+            <div class="content-top-bar">
+                <div>
+                    <font-awesome-icon icon="fa-brands fa-facebook-f" class="icon"/>
+                    <font-awesome-icon icon="fa-brands fa-twitter" class="icon"/>
+                    <font-awesome-icon icon="fa-brands fa-pinterest-p" class="icon"/>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <div><font-awesome-icon icon="fa-solid fa-arrow-up" class="icon"/></div> 
+            <div><font-awesome-icon icon="fa-regular fa-comment" class="icon"/></div>
+        </div>
     </div>
   </footer>
 </template>
@@ -100,5 +113,47 @@ export default {
         }
       }
     }
+}
+.bottom-footer{
+    background: $secondary-brand-gradient;
+    @include flex($justify: flex);
+    padding: 40px 0;
+    position: relative;
+
+    .icons{
+        color: white;
+        @include flex($justify: Between_Center);
+        position: absolute;
+        right: 5%;
+        top: 10px;
+
+        div{
+            &:first-child{
+                background: $bg-soft-grey;
+                color: $grey-text;
+                padding:8px 10px;
+                border-radius: 50%;
+                margin-right: 10px;
+                font-size: 0.5rem;
+            }
+            &:last-child{
+                background: #527CEB;
+                padding:8px 10px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.black-bottom-footer{
+    @include flex($justify: Between_Center);
+    @include center;
+    color: $lightGrey-text;
+    font-size: 0.6rem;
+    font-weight: bold;
+
+    .icon{
+        margin-right: 20px;
+      }
 }
 </style>

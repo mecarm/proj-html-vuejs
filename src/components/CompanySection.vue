@@ -38,6 +38,7 @@ section{
 }
 .container{
     padding: $vertical-center-pd;
+    padding-bottom: 100px;
     @include center;
     @include flex($justify: Between_Center)
 }
