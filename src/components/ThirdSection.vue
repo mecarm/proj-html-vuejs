@@ -158,7 +158,6 @@ export default {
             img{
                 opacity: 0.2;
             }
-
             .d-none{
                 display: block;
             }
